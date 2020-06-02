@@ -1,26 +1,22 @@
 // Colors
-
 $color-white: #f7f7f7;
 
+$color1 : #244F75;
+$color2: #60BFBF;
+$color3: #8C4B7E;
+$color4: #F8BB44;
+$color5: #F24B4B;
+
 $bg-colors:
-#244F75,
-#60BFBF,
-#8C4B7E,
-#F8BB44,
-#F24B4B,
+$color1,
+$color2,
+$color3,
+$color4,
+$color5,
 ;
 
 @for $i from 1 through length($bg-colors) {
     .stripe-box:nth-child(#{length($bg-colors)}n+#{$i}) {
         background: lighten(nth($bg-colors, $i), 1%);
     }
-}
-
-// .allStripes {
-
-//     .stripe-box {}
-// }
-
-@mixin easeOut {
-    transition: all .6s cubic-bezier(0.23, 1, 0.32, 1);
 }

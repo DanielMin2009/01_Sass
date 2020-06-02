@@ -1,53 +1,41 @@
 @import "colors";
 @import "fonts";
 
-.allStripes {
-    height            : 100vh;
-    display           : grid;
-    grid-template-rows: auto;
-    grid-column-gap   : 0px;
-    grid-row-gap      : 0px;
-    justify-items     : stretch;
-    align-items       : center;
-    align-content     : center;
-    align-self        : center;
+.container {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: auto;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  justify-items: stretch;
+  align-items: center;
+  align-content: center;
+  align-self: center;
+
+  @media screen and (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
+
+  @media screen and (min-width: 768px) {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }
+//   .stripe-box {
+//     display: grid;
+//     grid-template-columns: 1fr;
+//     grid-template-rows: auto;
+//     grid-column-gap: 0px;
+//     grid-row-gap: 0px;
+//     justify-items: center;
+//     align-items: center;
 
     @media screen and (max-width: 768px) {
-        grid-template-columns: 1fr;
+      min-height: 20vh;
     }
 
     @media screen and (min-width: 768px) {
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+      min-height: 100vh;
     }
-
-    .stripe-box {
-
-        display              : grid;
-        grid-template-columns: 1fr;
-        grid-template-rows   : auto;
-        grid-column-gap      : 0px;
-        grid-row-gap         : 0px;
-        justify-items        : center;
-        align-items          : center;
-
-        @media screen and (max-width: 768px) {
-            min-height           : 20vh;
-        }
-
-        @media screen and (min-width: 768px) {
-            min-height           : 100vh;
-        }
-
-        .stripe-content {
-
-            width     : 100%;
-            text-align: center;
-
-        }
-    }
-}
-
-
+  }
 
 
 // @mixin child($n) {
@@ -382,8 +370,6 @@
 // p {
 //     margin: 0 0 16px;
 // }
-
-
 
 // @mixin child($n) {
 //     &:nth-child(#{$n}){
