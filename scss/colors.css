@@ -1,0 +1,20 @@
+.stripe-box:nth-child(5n+1) {
+  background: #255279;
+}
+
+.stripe-box:nth-child(5n+2) {
+  background: #64c0c0;
+}
+
+.stripe-box:nth-child(5n+3) {
+  background: #8f4d81;
+}
+
+.stripe-box:nth-child(5n+4) {
+  background: #f8bd49;
+}
+
+.stripe-box:nth-child(5n+5) {
+  background: #f25050;
+}
+/*# sourceMappingURL=colors.css.map */

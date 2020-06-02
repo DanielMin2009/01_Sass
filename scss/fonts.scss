@@ -1,0 +1,27 @@
+@import "colors";
+
+$font-stack: "Lato", sans-serif;
+
+body {
+  font-family: $font-stack;
+  margin: 0;
+  line-height: 145%;
+}
+
+@mixin titles($font-size, $font-weight, $title-color: $color-white) {
+  margin: 0;
+  font-size: $font-size;
+  font-weight: $font-weight;
+  letter-spacing: 0.1rem;
+  color: $title-color;
+}
+
+.stripe-box {
+  h1 {
+    @include titles(2.4rem, 900);
+  }
+  h2 {
+    @include titles(3.6rem, 400);
+    text-transform: uppercase;
+  }
+}
