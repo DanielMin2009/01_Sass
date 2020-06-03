@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,700;0,900;1,300;1,700;1,900&display=swap");
 @import "colors";
 
 $font-stack: "Lato", sans-serif;
@@ -16,14 +17,12 @@ body {
   color: $title-color;
 }
 
-.stripe-box {
+.stripe {
   h1 {
-    @include titles(2.4rem, 900);
+    @include titles(2.4rem, 700);
   }
   h2 {
-    @include titles(3.6rem, 400);
+    @include titles(3.6rem, 300);
     text-transform: uppercase;
-    width: 100%;
-    text-align: center;
   }
 }
