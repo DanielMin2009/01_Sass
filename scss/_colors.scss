@@ -10,7 +10,7 @@ $colors: $color1, $color2, $color3, $color4, $color5;
 
 @for $i from 1 through length($colors) {
     .stripe:nth-child(#{length($colors)}n + #{$i}) {
-        background: lighten(nth($colors, $i), 1%);
+        background: darken(nth($colors, $i), 3%);
         animation-name: stripe#{$i};
     }
 }

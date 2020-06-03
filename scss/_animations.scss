@@ -6,24 +6,33 @@ $translate4: 0, +100%, 0;
 $translate5: +100%, 0, 0;
 $translates: $translate1, $translate2, $translate3, $translate4, $translate5;
 
+$bezier-transition: all 0.88s cubic-bezier(0.5, 1, 0.5, 1);
+
 
 // White Overlay
-@mixin overlay ($transform) {
-    -webkit-transform-origin: center center;
-    transform-origin: center center;
-    -webkit-transform: $transform translate(0, 0);
-    transform: $transform translate(0, 0);
-    transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
-}
+@mixin overlay ($transform) { 
 
+    transform-origin: center center;
+    -webkit-transform-origin: center center;
+    -o-transform-origin: center center;      
+
+    transform: $transform translate(0, 0);
+    -webkit-transform: $transform translate(0, 0);
+    -o-transform: $transform translate(0, 0);
+
+    transition: $bezier-transition;
+    -webkit-transition: $bezier-transition;
+    -o-transition: $bezier-transition;
+}
 
 // Stripes Animation
 @for $i from 1 through 5 {
     .stripe:nth-child(#{$i}) {
     animation-name: stripe#{$i};
     animation-duration: 1s;
-    animation-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
-    animation-delay: 0.5s;
+    animation-delay: 0.6s;
+    animation-timing-function: $bezier-transition;
+    animation-fill-mode: both;
     }
 }
 

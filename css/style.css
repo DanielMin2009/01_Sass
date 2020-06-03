@@ -1,22 +1,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,700;0,900;1,300;1,700;1,900&display=swap");
 .stripe:nth-child(5n + 1) {
-  background: #255279;
+  background: #204769;
   animation-name: stripe1; }
 
 .stripe:nth-child(5n + 2) {
-  background: #64c0c0;
+  background: #55bbbb;
   animation-name: stripe2; }
 
 .stripe:nth-child(5n + 3) {
-  background: #8f4d81;
+  background: #824675;
   animation-name: stripe3; }
 
 .stripe:nth-child(5n + 4) {
-  background: #f8bd49;
+  background: #f7b635;
   animation-name: stripe4; }
 
 .stripe:nth-child(5n + 5) {
-  background: #f25050;
+  background: #f13d3d;
   animation-name: stripe5; }
 
 body {
@@ -24,14 +24,14 @@ body {
   margin: 0;
   line-height: 145%; }
 
-.stripe h1 {
+.container h1 {
   margin: 0;
   font-size: 2.4rem;
   font-weight: 700;
   letter-spacing: 0.1rem;
   color: #F7F7F7; }
 
-.stripe h2 {
+.container .stripe h2 {
   margin: 0;
   font-size: 3.6rem;
   font-weight: 300;
@@ -42,32 +42,37 @@ body {
 .stripe:nth-child(1) {
   animation-name: stripe1;
   animation-duration: 1s;
-  animation-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
-  animation-delay: 0.5s; }
+  animation-delay: 0.6s;
+  animation-timing-function: all 0.88s cubic-bezier(0.5, 1, 0.5, 1);
+  animation-fill-mode: both; }
 
 .stripe:nth-child(2) {
   animation-name: stripe2;
   animation-duration: 1s;
-  animation-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
-  animation-delay: 0.5s; }
+  animation-delay: 0.6s;
+  animation-timing-function: all 0.88s cubic-bezier(0.5, 1, 0.5, 1);
+  animation-fill-mode: both; }
 
 .stripe:nth-child(3) {
   animation-name: stripe3;
   animation-duration: 1s;
-  animation-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
-  animation-delay: 0.5s; }
+  animation-delay: 0.6s;
+  animation-timing-function: all 0.88s cubic-bezier(0.5, 1, 0.5, 1);
+  animation-fill-mode: both; }
 
 .stripe:nth-child(4) {
   animation-name: stripe4;
   animation-duration: 1s;
-  animation-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
-  animation-delay: 0.5s; }
+  animation-delay: 0.6s;
+  animation-timing-function: all 0.88s cubic-bezier(0.5, 1, 0.5, 1);
+  animation-fill-mode: both; }
 
 .stripe:nth-child(5) {
   animation-name: stripe5;
   animation-duration: 1s;
-  animation-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
-  animation-delay: 0.5s; }
+  animation-delay: 0.6s;
+  animation-timing-function: all 0.88s cubic-bezier(0.5, 1, 0.5, 1);
+  animation-fill-mode: both; }
 
 @keyframes stripe1 {
   0% {
@@ -110,27 +115,26 @@ body {
     transform: translate3d(0, 0, 0); } }
 
 .stripe:nth-child(5n + 1) {
-  background: #255279;
+  background: #204769;
   animation-name: stripe1; }
 
 .stripe:nth-child(5n + 2) {
-  background: #64c0c0;
+  background: #55bbbb;
   animation-name: stripe2; }
 
 .stripe:nth-child(5n + 3) {
-  background: #8f4d81;
+  background: #824675;
   animation-name: stripe3; }
 
 .stripe:nth-child(5n + 4) {
-  background: #f8bd49;
+  background: #f7b635;
   animation-name: stripe4; }
 
 .stripe:nth-child(5n + 5) {
-  background: #f25050;
+  background: #f13d3d;
   animation-name: stripe5; }
 
 * {
-  box-sizing: border-box;
   margin: 0;
   height: 100vh;
   overflow: hidden; }
@@ -148,13 +152,13 @@ body {
     .container {
       grid-template-columns: 1fr 1fr 1fr 1fr 1fr; } }
   .container .stripe {
+    overflow: hidden;
     width: 100%;
     display: grid;
     justify-content: center;
     position: relative;
     top: 0;
-    left: 0;
-    overflow: hidden; }
+    left: 0; }
     @media screen and (max-width: 768px) {
       .container .stripe {
         height: 20vh;
@@ -171,11 +175,15 @@ body {
     z-index: 1;
     background: #F7F7F7;
     opacity: 0.05;
-    -webkit-transform-origin: center center;
     transform-origin: center center;
-    -webkit-transform: skew(30deg) scaleY(1) translate(0, 0);
+    -webkit-transform-origin: center center;
+    -o-transform-origin: center center;
     transform: skew(30deg) scaleY(1) translate(0, 0);
-    transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1); }
+    -webkit-transform: skew(30deg) scaleY(1) translate(0, 0);
+    -o-transform: skew(30deg) scaleY(1) translate(0, 0);
+    transition: all 0.88s cubic-bezier(0.5, 1, 0.5, 1);
+    -webkit-transition: all 0.88s cubic-bezier(0.5, 1, 0.5, 1);
+    -o-transition: all 0.88s cubic-bezier(0.5, 1, 0.5, 1); }
     @media screen and (max-width: 768px) {
       .container h2:before {
         left: 20%;
@@ -187,9 +195,14 @@ body {
   .container h2:hover {
     cursor: pointer; }
   .container h2:hover:before {
-    -webkit-transform-origin: center center;
     transform-origin: center center;
-    -webkit-transform: scale(2) translate(0, 0);
-    transform: scale(2) translate(0, 0);
-    transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+    -webkit-transform-origin: center center;
+    -o-transform-origin: center center;
+    transform: skew(0deg) scale(3) translate(0, 0);
+    -webkit-transform: skew(0deg) scale(3) translate(0, 0);
+    -o-transform: skew(0deg) scale(3) translate(0, 0);
+    transition: all 0.88s cubic-bezier(0.5, 1, 0.5, 1);
+    -webkit-transition: all 0.88s cubic-bezier(0.5, 1, 0.5, 1);
+    -o-transition: all 0.88s cubic-bezier(0.5, 1, 0.5, 1);
+    opacity: 0.07;
     cursor: pointer; }

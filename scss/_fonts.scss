@@ -17,12 +17,16 @@ body {
   color: $title-color;
 }
 
-.stripe {
+.container {
   h1 {
     @include titles(2.4rem, 700);
   }
-  h2 {
-    @include titles(3.6rem, 300);
-    text-transform: uppercase;
+  .stripe {
+    h2 {
+      @include titles(3.6rem, 300);
+      text-transform: uppercase;
+    }
   }
 }
+
+
