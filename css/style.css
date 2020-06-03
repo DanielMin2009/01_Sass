@@ -1,44 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,700;0,900;1,300;1,700;1,900&display=swap");
-.stripe:nth-child(5n + 1) {
-  background: #204769;
-  animation-name: stripe1; }
-
-.stripe:nth-child(5n + 2) {
-  background: #55bbbb;
-  animation-name: stripe2; }
-
-.stripe:nth-child(5n + 3) {
-  background: #824675;
-  animation-name: stripe3; }
-
-.stripe:nth-child(5n + 4) {
-  background: #f7b635;
-  animation-name: stripe4; }
-
-.stripe:nth-child(5n + 5) {
-  background: #f13d3d;
-  animation-name: stripe5; }
-
-body {
-  font-family: "Lato", sans-serif;
-  margin: 0;
-  line-height: 145%; }
-
-.container h1 {
-  margin: 0;
-  font-size: 2.4rem;
-  font-weight: 700;
-  letter-spacing: 0.1rem;
-  color: #F7F7F7; }
-
-.container .stripe h2 {
-  margin: 0;
-  font-size: 3.6rem;
-  font-weight: 300;
-  letter-spacing: 0.1rem;
-  color: #F7F7F7;
-  text-transform: uppercase; }
-
 .stripe:nth-child(1) {
   animation-name: stripe1;
   animation-duration: 1s;
@@ -133,6 +93,46 @@ body {
 .stripe:nth-child(5n + 5) {
   background: #f13d3d;
   animation-name: stripe5; }
+
+.stripe:nth-child(5n + 1) {
+  background: #204769;
+  animation-name: stripe1; }
+
+.stripe:nth-child(5n + 2) {
+  background: #55bbbb;
+  animation-name: stripe2; }
+
+.stripe:nth-child(5n + 3) {
+  background: #824675;
+  animation-name: stripe3; }
+
+.stripe:nth-child(5n + 4) {
+  background: #f7b635;
+  animation-name: stripe4; }
+
+.stripe:nth-child(5n + 5) {
+  background: #f13d3d;
+  animation-name: stripe5; }
+
+body {
+  font-family: "Lato", sans-serif;
+  margin: 0;
+  line-height: 145%; }
+
+.container h1 {
+  margin: 0;
+  font-size: 2.4rem;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+  color: #F7F7F7; }
+
+.container .stripe h2 {
+  margin: 0;
+  font-size: 3.6rem;
+  font-weight: 300;
+  letter-spacing: 0.1rem;
+  color: #F7F7F7;
+  text-transform: uppercase; }
 
 * {
   margin: 0;

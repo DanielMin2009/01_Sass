@@ -7,7 +7,6 @@ $color4: #F8BB44;
 $color5: #F24B4B;
 $colors: $color1, $color2, $color3, $color4, $color5;
 
-
 @for $i from 1 through length($colors) {
     .stripe:nth-child(#{length($colors)}n + #{$i}) {
         background: darken(nth($colors, $i), 3%);
