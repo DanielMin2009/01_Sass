@@ -1,11 +1,19 @@
 // colors
-$color-white: #F7F7F7;
-$color1: #244F75;
-$color2: #60BFBF;
-$color3: #8C4B7E;
-$color4: #F8BB44;
-$color5: #F24B4B;
+$color-white: #f7f7f7;
+$color1: #244f75;
+$color2: #60bfbf;
+$color3: #8c4b7e;
+$color4: #f8bb44;
+$color5: #f24b4b;
 $colors: $color1, $color2, $color3, $color4, $color5;
+
+$bg-colors: (
+    $color1: #244f75,
+    $color2: #60bfbf,
+    $color3: #8c4b7e,
+    $color4: #f8bb44,
+    $color5: #f24b4b,
+);
 
 @for $i from 1 through length($colors) {
     .stripe:nth-child(#{length($colors)}n + #{$i}) {
@@ -13,3 +21,11 @@ $colors: $color1, $color2, $color3, $color4, $color5;
         animation-name: stripe#{$i};
     }
 }
+
+
+// @mixin stripes($color1,$color2,$color3,$color4,$color5) {
+//     @if 
+    
+// }
+
+// @for $i from 1 through length($colors) {

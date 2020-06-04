@@ -8,9 +8,8 @@ $translates: $translate1, $translate2, $translate3, $translate4, $translate5;
 
 $bezier-transition: all 0.88s cubic-bezier(0.5, 1, 0.5, 1);
 
-
-// White Overlay
-@mixin overlay ($transform) { 
+// White layer
+@mixin white-layer ($transform) { 
 
     transform-origin: center center;
     -webkit-transform-origin: center center;
